@@ -16,6 +16,8 @@
 import Header from '@/components/Header.vue'
 import LinkInput from '@/components/LinkInput.vue'
 
+import config from '../../../config.json'
+
 export default {
   components: {
     Header,
@@ -27,7 +29,7 @@ export default {
     }
   },
   created () {
-    document.title = 'Lighten Link Shortener'
+    document.title = config['app-name'] ? config['app-name'] + ' Link Shortener' : 'Lighten2 Link Shortener'
   }
 }
 </script>
