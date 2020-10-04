@@ -9,7 +9,7 @@
       mode="horizontal"
       active-text-color="#48a2e2"
     >
-      <el-menu-item index="1">Lighten Link Shortener</el-menu-item>
+        <el-menu-item index="1"><router-link :to="{ name: 'Home' }" class="text-link">Shortener</router-link></el-menu-item>
       <el-menu-item v-if="isLoggedIn" index="2">My Links</el-menu-item>
     </el-menu>
     <el-menu
@@ -21,7 +21,7 @@
       <el-submenu index="2">
         <template slot="title">Account</template>
         <el-menu-item v-if="!isLoggedIn" index="2-1" @click="login">Login</el-menu-item>
-        <el-menu-item v-if="!isLoggedIn" index="2-2" @click="signup">Sign Up</el-menu-item>
+        <el-menu-item v-if="!isLoggedIn" index="2-2" @click="register">Register</el-menu-item>
       </el-submenu>
     </el-menu>
   </div>
@@ -56,8 +56,8 @@ export default {
     login () {
       this.$router.push({ name: 'Login' })
     },
-    signup () {
-      this.$router.push({ name: 'SignUp' })
+    register () {
+      this.$router.push({ name: 'Register' })
     }
   }
 }
@@ -79,6 +79,11 @@ export default {
   margin-top: 10px;
   display: flex;
   align-items: center;
+}
+
+.text-link {
+  text-decoration: none;
+  color: black;
 }
 
 /deep/ .el-menu-item {
