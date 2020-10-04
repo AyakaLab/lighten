@@ -32,6 +32,8 @@ export default {
 }
 
 #link {
+  font-size: 16px;
+  color: #484848;
   width: 70%;
   margin: 0 auto;
   height: 40px;
