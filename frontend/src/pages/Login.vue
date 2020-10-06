@@ -23,7 +23,10 @@
 
 <script>
 
+import Axios from 'axios'
+
 import Header from '@/components/Header.vue'
+import config from '../../../config.json'
 
 export default {
   components: {
@@ -49,7 +52,7 @@ export default {
   },
   methods: {
     login () {
-
+      Axios.post(config['api-server'] + '/login', { email: this.ruleForm.email, password: this.ruleForm.password })
     },
     register () {
       this.$router.push({ name: 'Register' })
