@@ -1,5 +1,5 @@
 {
-  "name": "lighten",
+  "name": "lighten-fe",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "core-js": "^3.6.5",
     "element-ui": "^2.13.2",
     "vue": "^2.6.11",
@@ -29,7 +30,5 @@
     "less": "^3.12.2",
     "less-loader": "5.0.0",
     "vue-template-compiler": "^2.6.11"
-  },
-  "_id": "lighten@0.1.0",
-  "readme": "ERROR: No README data found!"
+  }
 }
