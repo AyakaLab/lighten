@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header />
+    <span class="title">{{ appName }}</span>
     <LinkInput v-model="linkInput" />
     <div class="btn-group">
       <div>
@@ -25,16 +26,25 @@ export default {
   },
   data () {
     return {
-      linkInput: ''
+      linkInput: '',
+      appName: ''
     }
   },
   created () {
-    document.title = config['app-name'] ? config['app-name'] + ' Link Shortener' : 'Lighten2 Link Shortener'
+    this.appName = config['app-name'] ? config['app-name'] + ' Link Shortener' : 'Lighten Link Shortener'
+    document.title = this.appName
   }
 }
 </script>
 
 <style lang="less" scoped>
+.title {
+  margin: 80px 0 0 0;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+}
 .btn-group {
   margin-top: 20px;
   text-align: center;
