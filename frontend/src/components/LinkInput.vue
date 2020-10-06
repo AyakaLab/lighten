@@ -38,7 +38,7 @@ export default {
   margin: 0 auto;
   height: 40px;
   border-radius: 25px;
-  margin-top: 50px;
+  margin-top: 20px;
   border: 3px solid #48a2e2;
   outline: none;
   padding: 0 15px;
