@@ -3,5 +3,7 @@
     "domain": "https://ato.moe",
     "main-theme": "#48a2e2",
     "allow-register": true,
-    "allow-email-verify": true
+    "allow-email-verify": true,
+    "api-server": "http://127.0.0.1:8082",
+    "logo": "./assets/logo.png",
 }
