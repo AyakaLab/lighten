@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Verify your email</title>
+    <meta name="description" content="Verify your email">
+    <style>
+      body {
+        width: 100%;
+        max-width: 600px;
+        background-color: #F5F5F5;
+        margin: 0 auto;
+      }
+      header {
+        display: flex;
+        flex-direction: column;
+        padding-top: 12px;
+        padding-left: 24px;
+        padding-bottom: 10px;
+        font-size: 12px;
+        background-color: white;
+      }
+      .header-img > img{
+        padding-top: 30px;
+        padding-left: 226px;
+        padding-right: 250px;
+        padding-bottom: 30px;
+        height: 100px;
+        width: 100px;
+      }
+      .container {
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: white;
+      }
+      .main-title {
+        font-size: 24px;
+        line-height: 10px;
+      }
+      .main-content {
+        font-size: 14px;
+        padding-bottom: 40px;
+      }
+      .main-bottom {
+        font-size: 14px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .main-footer {
+        font-size: 14px;
+        color: white;
+        background-color: #808080;
+        padding: 20px 20px 20px 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <header>
+        <span class="header-left">{{APPNAME}} Verify Your Email</span>
+        <div class="header-img">
+          <img src={{IMAGEPATH}} />
+        </div>
+      </header>
+    </div>
+    <div class="container">
+      <div class="main-title">
+        Verify Your Email
+      </div>
+      <div class="main-content">
+        <p>
+          Your verification code is: {{code}}
+        </p>
+        <p>
+          Verification code is valid in next 10 minutes, it will expire afterwards.
+        </p>
+        <p>
+          If you didn't register any service of A2, please ignore this email, or check your email settings for security reason. Sorry for the inconvenience.
+        </p>
+      </div>
+      <div class="main-bottom">
+        <span>{{APPNAME}} System Email</span>
+      </div>
+    </div>
+    <div class="main-footer">
+      <span>This email is send through A2 system automatically, if you have any problem or encountered some error please do not reply to this email, contact website administator as soon as possible.</span>
+    </div>
+  </body>
+
+</html>
